@@ -24,7 +24,7 @@ export function Layout() {
           Second Protected Route
         </Button> */}
         {route !== 'authenticated' ? (
-          <Button onClick={() => navigate('/login')}>Login</Button>
+          <Button onClick={() => navigate('/login')}>Restaurateur</Button>
         ) : (
           <Button onClick={() => logOut()}>Logout</Button>
         )}
