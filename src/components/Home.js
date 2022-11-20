@@ -1,10 +1,8 @@
-import { Heading } from '@aws-amplify/ui-react';
-// import "./Home.css";
+import React from 'react';
+import "./Home.css";
 
 export function Home() {
   return (
-    <Heading level={3}>
-      NuOrder
-    </Heading>
+    <h1 className="app__header-h1"> Authentic food on your table </h1>
   );
 }

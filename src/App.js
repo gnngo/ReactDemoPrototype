@@ -1,6 +1,9 @@
+import React from "react";
+
 import { Authenticator } from '@aws-amplify/ui-react';
-import { Login } from './components/Login';
 import { Home } from './components/Home';
+import { Login } from './components/Login';
+import { Customer } from './components/Customer';
 import { Layout } from './components/Layout';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -14,6 +17,7 @@ function MyRoutes() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/customer" element={<Customer />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -27,5 +31,4 @@ function App() {
     </Authenticator.Provider>
   );
 }
-
 export default App;
