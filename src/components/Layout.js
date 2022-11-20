@@ -28,11 +28,12 @@ export function Layout() {
         ) : (
           <Button onClick={() => logOut()}>Logout</Button>
         )}
+        <Button onClick={() => navigate('/')}>Customer</Button>
       </nav>
       {/* <Heading level={1}>Example Auth Routes App</Heading> */}
-      <View>
+      {/* <View>
         {route === 'authenticated' ? 'You are logged in!' : 'Please Login!'}
-      </View>
+      </View> */}
 
       <Outlet />
     </>
