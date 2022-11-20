@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { useAuthenticator, Button } from '@aws-amplify/ui-react';
-import logo from './img/logo.png';
+import logo from './img/image133.png';
 import "./Layout.css";
 export function Layout() {
   const { route, signOut } = useAuthenticator((context) => [
@@ -16,16 +16,16 @@ export function Layout() {
   }
   return (
     <> 
-      <img src={logo} alt="logo"/>
-      {/* <Button className="homelogo" style={{color: "orange"}} onClick={() => navigate('/')}> <img src={logo} alt="logo"/> </Button>  */}
+      {/* <img src={logo} alt="logo"/> */}
+      <Button className="homelogo" style={{color: "orange"}} onClick={() => navigate('/')}> <img src={logo} alt="logo"/> </Button>
       <nav className="a">
         
-        <Button style={{color: "orange"}} onClick={() => navigate('/')}> HOME </Button> 
+        {/* <Button style={{color: "orange"}} onClick={() => navigate('/')}> HOME </Button>  */}
         {/* <Button onClick={() => navigate('/')}> <img src={logo} alt="logo"/> </Button> */}
       </nav>
 
-      <div >
-      <h2 style={{color: "white"}}> I AM </h2>
+      <div className="I">
+      <h2 style={{color: "white"}}> I'M A </h2>
       </div>
       
       <div>
